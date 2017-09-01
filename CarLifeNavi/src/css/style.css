@@ -1,0 +1,49 @@
+
+/*-------------------------
+ * common
+ *------------------------*/
+
+html { 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+img { 
+    border: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+header { 
+    background-color:gainsboro;
+}
+footer { 
+    background-color:gainsboro;
+    text-align: center;
+}
+
+a { color: #0cc; text-decoration: none; }
+a:visited { color: #0cc; }
+a:hover { color: #9c0; }
+
+
+h1 { 
+
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+
+/* --------------------------------------
+|  [> 各スタイル              |
+-------------------------------------- */
+
