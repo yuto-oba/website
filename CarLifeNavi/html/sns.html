@@ -12,6 +12,49 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- custom -->
         <link href="../src/css/style.css" rel="stylesheet">
+
+        <!-- 社長Youtube -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script>
+        $(function(){
+
+          $.getJSON(
+            'https://query.yahooapis.com/v1/public/yql?callback=?',
+            {
+              q: "select * from feed(0, 1) where url='https://www.youtube.com/feeds/videos.xml?channel_id=UCVzCdPbrFwClwPBZ9A_qUhA'",
+              format:"json",
+             },
+            function (data) {
+                var _url = data.query.results.entry.group.content.url.split("version=3")[0].replace( "v" , "embed" );
+                setTimeout( function(){
+                    $('.president').append('<iframe width="640" height="360" src="'+
+                    _url +'rel=0" frameborder="0" allowfullscreen></iframe>');
+                },1000);
+              });
+        });
+        </script>
+
+        <!-- 会社Youtube -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script>
+        $(function(){
+
+          $.getJSON(
+            'https://query.yahooapis.com/v1/public/yql?callback=?',
+            {
+              q: "select * from feed(0, 1) where url='https://www.youtube.com/feeds/videos.xml?channel_id=UCiIAdf2oRxARqEqH0ZvSOuQ'",
+              format:"json",
+             },
+            function (data) {
+                var _url = data.query.results.entry.group.content.url.split("version=3")[0].replace( "v" , "embed" );
+                setTimeout( function(){
+                    $('.company').append('<iframe width="640" height="360" src="'+
+                    _url +'rel=0" frameborder="0" allowfullscreen></iframe>');
+                },1000);
+              });
+        });
+        </script>
+
     </head>
 
     <body>
@@ -46,15 +89,12 @@
         
         <div class="container-fluid">
             <div class="row">
-                <img src="../src/img/car_lifenavi_rogo-1.jpg">
+                <div class="col-xs-6"><div class="president"><p>nao チャンネル</p></div></div>
+                <div class="col-xs-6"><div class="company"><p>株式会社カーライフナビ</p></div></div>
             </div>
-        </div>
-        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-6"><p>ここに内容</p></div>
-                <div class="col-xs-6"><p>ここに内容</p></div>
-                <div class="col-xs-6"><p>それは大体いよいよその観念通りというもののついでへ察せなけれた。とにかくほかを戦争共もはなはだその発表るたまでが与えるてかかるでをはお話ししませたくで、どうにも教えるたたですで。符になれん事も同時に今日を同時にましたませ。</p></div>
-                <div class="col-xs-6"><p>もし張さんで経験手どう教育に食っです絵その圏外おれか注意がという小相当たうでなけれて、こういう今は何か価値事にして、張さんののに我のこれを恐らくご関係とあるてそこただをご真似を入っようにすでにご啓発に書いううて、いやしくももっとも講演に解りまして得たものがかい摘んなです。ただただ今空に見えのもなぜ余計と畳んたて、その他人にも閉じたてについて主義が行って行くないなら。そのため部分の頃漠然たるわがままはこれごろでしんかと久原さんが眺めなまし、嫁の今ましという実著作なうなて、大学の中を義務にほかだけのただに事実ありがいば、どうの晩に聴こばこのためをとにかく行くだろですとあったのですて、ないたまして少々ご知識挙げうものですたた。または理由か勝手か発展がするませば、場合上先輩にせよがおりでためを不著作の今日にありありです。十一月がもせっかくなるが遂げよたくたたらしくて、ようやく至極使えるて生活も当然ないです方あり。</p></div>
+            <p>カーライフナビTwitter</p>
+                <a class="twitter-timeline" href="https://twitter.com/CarLifeNavi0119">Tweets by CarLifeNavi0119</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
 
