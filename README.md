@@ -7,7 +7,10 @@
 - 中身のテキストは自分達で考える
 - サーバ仕様(ロリポップ)
   - https://lolipop.jp/service/server-spec/
-
+- path等を直さないといけないもの
+  - send.cgi(thanks.htmlのパス、設置者メールアドレス)
+  - faq.html(mailformディレクトリのパス)
+  
 ***
 
 
