@@ -91,7 +91,10 @@ h3 span {
 .nav {
     margin: 0;
     background-color: #fafafa;
-    width: 100%
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 nav ul {
     display:-webkit-box;
@@ -112,9 +115,7 @@ nav ul {
     border-top:1px solid #cccccc;
     border-bottom:1px solid #cccccc;
 }
-nav li {
-    box-sizing: border-box;
-}
+
 .nav li:hover, .nav li a:hover {
     background-color: #eeeeee;
 }
@@ -130,10 +131,14 @@ nav li {
         float: left;
         width: 25%;
         text-align: center;
+        margin-left: -1px;
     }
+    
     nav li:nth-child(1), li:nth-child(2), li:nth-child(3), li:nth-child(4) {
         border-bottom: 1px solid #cccccc;
-
+    }
+    nav li:nth-child(5){
+        
     }
     nav li:not(:nth-child(4)) {
         border-right: 1px solid #cccccc;
