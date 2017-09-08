@@ -6,9 +6,9 @@
 - 色んなサイトに社長インタビューがある
 - 中身のテキストは自分達で考える
 - サーバ仕様(ロリポップ)
--- https://lolipop.jp/service/server-spec/
+  - https://lolipop.jp/service/server-spec/
 - メール送信cgi(SYNCK GRAPHICA)
--- https://www.synck.com/contents/download/cgi-perl/mailform_jcode.html
+  - https://www.synck.com/contents/download/cgi-perl/mailform_jcode.html
 
 ***
 
