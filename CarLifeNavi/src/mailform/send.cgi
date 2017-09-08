@@ -9,7 +9,7 @@ use Jcode;
 ########################################################################
 
 #00.テスト時の誤送信を制御 / 0にしないとメールが飛びません
-$conf{'debug'} = 1;
+$conf{'debug'} = 0;
 
 #03.スパムブロック([URL]や[LINK]、<a>タグが含まれた送信をブロック) 1:ON / 0:OFF
 $conf{'spam_block'} = 1;
@@ -24,16 +24,16 @@ $conf{'spam_message'} = 'スパム行為の可能性があるため、送信で�
 $conf{'sendmail'} = '/usr/sbin/sendmail';
 
 #06.設置者のアドレス(カンマ区切り)
-$conf{'mailto'} = '******';
+$conf{'mailto'} = 'yuto.oba19901228@gmail.com';
 
 #07.送信完了時にリダイレクトするサンクスページ
-$conf{'thanks'} = 'http://cgi.synck.com/mailform/thanks.html';
+$conf{'thanks'} = 'http://carlifenavi.blush.jp/test/html/faq_thanks.html';
 
 #08.設置者に届くメールの件名
-$conf{'subject'} = 'メールフォームから';
+$conf{'subject'} = 'メールフォームからお問い合わせ';
 
 #09.送信者に届くメールの件名
-$conf{'res_subject'} = 'お問い合わせありがとうございます';
+$conf{'res_subject'} = '【株式会社カーライフナビ】お問い合わせありがとうございます';
 
 #10.送信者に届くメールの本文
 $conf{'res_body'} = <<'__res_body_eof__';
@@ -49,11 +49,10 @@ $conf{'res_body'} = <<'__res_body_eof__';
 
 この度はお問い合わせ重ねてお礼申し上げます。
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-　※この署名はサンプルです。必ず変更してください※　
-　シンクグラフィカ / SYNCKGRAPHICA
-　〒003-0801 札幌市白石区菊水一条四丁目一番三十九号
-　TEL / 011-832-8698　FAX / 011-832-8698
-　http://www.synck.com
+　株式会社カーライフナビ
+　〒289-1114　千葉県八街市八街ほ1043-28
+　TEL / 043-497-2616　FAX / 043-497-2959
+　http://carlifenavi.blush.jp/html/index.html
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 __res_body_eof__
 
