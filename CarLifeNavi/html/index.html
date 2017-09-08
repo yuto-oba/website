@@ -10,6 +10,9 @@
         <!-- bootstrap -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- swiper -->
+        <link rel="stylesheet" href="../src/css/swiper.min.css">
+        <script src="../src/js/swiper.min.js"></script>
         <!-- custom -->
         <link href="../src/css/style.css" rel="stylesheet">
     </head>
@@ -39,9 +42,17 @@
 
         <!-- contents -->
         <div class="container-fluid">
-            <div class="row">
-                <img src="../src/img/car_lifenavi_rogo-1.jpg">
-            </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 
+                                <img src="../src/img/car_lifenavi_rogo-1.jpg">
+                            </div>
+                            <div class="swiper-slide"> 
+                                <img src="../src/img/goonet_logo.png">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -61,4 +72,15 @@
         <!-- footer -->
         <footer></footer>
     </body>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoHeight: true,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            parallax: true,
+            speed: 600,
+            autoplay: 10000,
+        });
+    </script>
 </html>
