@@ -14,11 +14,13 @@ html {
     height: 100%; 
 }
 body {
-        background-color: #fafafa;
+    background-color: #fafafa;
 }
-
 header { 
     background-color: #202487;
+}
+main {
+    background: linear-gradient(#f2f3f3 0%, #fafafa 50%, #fafafa);
 }
 
 img { 
@@ -194,6 +196,10 @@ nav ul {
         width: 769px;
         height: 460px;
     }
+}
+
+.president iframe, .company iframe {
+    width: 100%;
 }
 
 /*-------------------------
