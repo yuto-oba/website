@@ -15,6 +15,7 @@ html {
 }
 body {
     background-color: #fafafa;
+    margin-bottom: 3em;
 }
 header { 
     background-color: #202487;
@@ -30,7 +31,11 @@ img {
     height: auto;
 }
 p {
+    padding: 0 1em;
     margin-bottom: 2em;
+}
+i {
+    margin-right: 3px;
 }
 
 a { 
@@ -87,6 +92,18 @@ h3 span {
 .theme { 
     margin: 1em 0;
     font-size: 2em;
+    text-align: center;
+}
+
+.corporate {
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+}
+.corporate dd {
+    margin-left: 2em;
+}
+.corporate dt:not(:nth-child(1)) {
+    margin-top: 1em;
 }
 
 /*-------------------------
