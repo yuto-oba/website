@@ -2,7 +2,7 @@
 div#mf_wrapper {
 	width: 640px;
 	text-align: left;
-	margin: 0px auto 0px auto;
+	/*margin: 0px auto 0px auto;*/
 	font-family: sans-serif;
 }
 div#mf_header h1 {
