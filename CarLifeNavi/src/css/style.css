@@ -62,7 +62,7 @@ img {
     padding: 0;
     max-width: 100%;
     height: auto;
-    border: 1px solid #eeeeee;
+    border: 1px solid #eee;
     border-radius: 3px;
 }
 .swiper-slide img {
@@ -304,6 +304,18 @@ nav ul {
 }
 .president iframe, .company iframe {
     width: 100%;
+}
+
+/*-------------------------
+ * mailform
+ *------------------------*/
+input, textarea {
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+input.btn {
+    color: #fafafa;
+    background-color: #5d627b;
 }
 
 /*-------------------------
