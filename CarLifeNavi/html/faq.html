@@ -10,6 +10,10 @@
         <!-- bootstrap -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- mailform -->
+        <link rel="stylesheet" href="../src/mailform/mailform.css" type="text/css">
+        <script type="text/javascript" src="../src/mailform/mailform.js" charset="utf-8"></script>
+        <script type="text/javascript" src="../src/mailform/postcodes/get.cgi?js" charset="utf-8"></script>
         <!-- custom -->
         <link href="../src/css/style.css" rel="stylesheet">
     </head>
@@ -46,33 +50,52 @@
                             <h2>お問い合わせ</h2>
                             <p>お問い合わせはコチラから！○営業日以内にご連絡いたします。</p>
                         </div>
-                        <form id="mailform" method="post" action="../src/mailform/send.cgi" onsubmit="return sendmail(this);">
-                            <table border="0" cellspacing="0" cellpadding="0" class="mailform">
-                                <tr>
-                                    <th>メールアドレス<span>*</span><p>e-mail address</p></th>
-                                    <td><input type="text" name="email(必須)" size="50" maxlength="50" class="mf" /></td>
-                                </tr>
-                                <tr>
-                                    <th>確認用メールアドレス<span>*</span><p>e-mail address</p></th>
-                                    <td><input type="text" name="confirm_email" size="50" class="mf" /></td>
-                                </tr>
-                                <tr>
-                                    <th>お名前（法人の場合会社名）<span>*</span><p>your name</p></th>
-                                    <td><input type="text" name="お名前(必須)" size="30" /></td>
-                                </tr>
-                                <tr>
-                                    <th>ご用件<span>*</span><p>inquiry body</p></th>
-                                    <td><textarea name="ご用件(必須)" rows="10" cols="70"></textarea></td>
-                                </tr>
-                                <tr>
-                                    <th><span>*</span>は必須項目です。</th>
-                                    <td><input type="submit" value="メールを送信する" /> <input type="reset" name="reset" value="リセット" /></td>
-                                </tr>
-                            </table>
-                        </form>
-                        <link rel="stylesheet" href="../src/mailform/mailform.css" type="text/css">
-                        <script type="text/javascript" src="../src/mailform/mailform.js" charset="utf-8"></script>
-                        <script type="text/javascript" src="../src/mailform/postcodes/get.cgi?js" charset="utf-8"></script>
+                        <div class="col-xs-12 col-sm-8">
+                            <form id="mailform" method="post" action="../src/mailform/send.cgi" onsubmit="return sendmail(this);">
+                                <table border="0" cellspacing="0" cellpadding="0" class="mailform">
+                                    <tr>
+                                        <th>メールアドレス<span>*</span>
+                                        <span class="sub">e-mail address</span></th>
+                                    <tr>
+                                    </tr>
+                                        <td><input type="text" name="email(必須)" size="50" maxlength="50" class="mf" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            確認用メールアドレス<span>*</span>
+                                            <span class="sub">check e-mail address</span>
+                                        </th>
+                                    <tr>
+                                    </tr>
+                                        <td><input type="text" name="confirm_email" size="50" class="mf" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            お名前（法人の場合、会社名）<span>*</span>
+                                            <span class="sub">your name</span>
+                                        </th>
+                                    <tr>
+                                    </tr>
+                                        <td><input type="text" name="お名前(必須)" size="30" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            ご用件<span>*</span>
+                                            <span class="sub">inquiry body</span>
+                                        </th>
+                                    <tr>
+                                    </tr>
+                                        <td><textarea name="ご用件(必須)" rows="10" cols="70"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>*</span>は必須項目です。</th>
+                                    <tr>
+                                    </tr>
+                                        <td><input type="submit" value="メールを送信する" /> <input type="reset" name="reset" value="リセット" /></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
