@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="../src/img/favicon.ico">
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script src="../src/js/jquery.matchHeight.js"></script>
         <!-- bootstrap -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -45,32 +46,42 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <h2>会社概要</h2>
-                        <dl class="corporate">
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>社名</dt>
-                                <dd>株式会社カーライフナビ</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>創業</dt>
-                                <dd>平成25年10月</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>事業内容</dt>
-                                <dd>中古車・新車の販売 / 買取 / カスタム / 車検 / 点検整備 / 任意保険等</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>所在地</dt>
-                                <dd>〒289-1114</dd>
-                                <dd>千葉県八街市八街ほ1043-28</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>代表取締役</dt>
-                                <dd>菅澤　直樹</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>社員数</dt>
-                                <dd>5名</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>営業時間</dt>
-                                <dd>10:00～20:00</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>定休日</dt>
-                                <dd>不定休</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>電話番号</dt>
-                                <dd>TEL：<a href="tel:0434972616">043-497-2616</a></dd>
-                                <dd>FAX：043-497-2959</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>古物商許可番号</dt>
-                                <dd>第441100002308</dd>
-                            <dt><i class="fa fa-check" aria-hidden="true"></i>加盟団体</dt>
-                                <dd>USSグループ / 東京海上代理店 / 商工会 / 各種ローン会社</dd>
-                        </dl>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="box">
+                            <dl class="corporate">
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>社名</dt>
+                                    <dd>株式会社カーライフナビ</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>創業</dt>
+                                    <dd>平成25年10月</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>事業内容</dt>
+                                    <dd>中古車・新車の販売 / 買取 / カスタム / 車検 / 点検整備 / 任意保険等</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>所在地</dt>
+                                    <dd>〒289-1114</dd>
+                                    <dd>千葉県八街市八街ほ1043-28</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>代表取締役</dt>
+                                    <dd>菅澤　直樹</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>社員数</dt>
+                                    <dd>5名</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>古物商許可番号</dt>
+                                    <dd>第441100002308</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>加盟団体</dt>
+                                    <dd>USSグループ / 東京海上代理店 / 商工会 / 各種ローン会社</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="box">
+                            <dl class="corporate">
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>営業時間</dt>
+                                    <dd>10:00～20:00</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>定休日</dt>
+                                    <dd>不定休</dd>
+                                <dt><i class="fa fa-check" aria-hidden="true"></i>電話番号</dt>
+                                    <dd>TEL：<a href="tel:0434972616">043-497-2616</a></dd>
+                                    <dd>FAX：043-497-2959</dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,4 +92,10 @@
             Copyright 2017 Car Life Navi. All Rights Reserved.
         </footer>
     </body>
+
+    <script>
+        $(function() {
+            $('.box').matchHeight();
+        });
+    </script>
 </html>
