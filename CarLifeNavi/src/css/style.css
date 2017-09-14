@@ -36,6 +36,10 @@ img {
     border: 1px solid #eeeeee;
     border-radius: 3px;
 }
+.swiper-slide img {
+    border: none;
+    border-radius: 0px;
+}
 
 p {
     padding: 0 1em;
@@ -102,6 +106,9 @@ h3 span {
   font-size: .7em;
 }
 
+/*-------------------------
+ * class
+ *------------------------*/
 .theme { 
     margin: 1em 0;
     font-size: 1.5em;
@@ -131,21 +138,21 @@ h3 span {
     background: linear-gradient(to bottom, #999 0%, #666 3%, #555 49%, #333 51%, #111 100%);
 }
 nav ul {
-    display:-webkit-box;
-    display:-moz-box;
-    display:-webkit-flexbox;
-    display:-moz-flexbox;
-    display:-ms-flexbox;
-    display:-webkit-flex;
-    display:-moz-flex;
-    display:flex;
-    -webkit-box-lines:multiple;
-    -moz-box-lines:multiple;
-    -webkit-flex-wrap:wrap;
-    -moz-flex-wrap:wrap;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
-    width:100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .nav li {
     display: -webkit-box;
@@ -214,6 +221,7 @@ nav ul {
  * google map
  *------------------------*/
 .map {
+    margin: 20px 0;
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
@@ -247,6 +255,9 @@ nav ul {
     }
 }
 
+/*-------------------------
+ * youtube
+ *------------------------*/
 .president iframe, .company iframe {
     width: 100%;
 }
@@ -257,7 +268,6 @@ nav ul {
 .container-fluid {
     padding: 0 !important;
 }
-
 .row {
     margin: 0 !important;
 }
