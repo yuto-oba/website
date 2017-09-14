@@ -49,12 +49,14 @@ footer {
                                               #202487);
     background-size: 6px 6px;
 }
-
 main {
     flex: 1;
     background: linear-gradient(#f2f3f3 0%, #fafafa 50%, #fafafa);
 }
 
+/*-------------------------
+ * style
+ *------------------------*/
 img { 
     border: 0;
     padding: 0;
@@ -95,15 +97,8 @@ hr {
     margin: 10px 20px;
 }
 
-a { 
-    color: #0cc; 
-    text-decoration: none; 
-}
-a:visited { 
-    color: #0cc; 
-}
 a:hover { 
-    color: #9c0; 
+    color: #ccc; 
 }
 
 
