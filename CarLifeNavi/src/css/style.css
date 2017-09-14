@@ -64,8 +64,10 @@ img {
 .box{
     padding: 0 0.5em 1em;
     margin: 1em 0;
-    color: #5d627b;
-    background: white;
+    background-color: #fff;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    background-position: right 10px bottom 8px;
     border-top: solid 5px #5d627b;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
