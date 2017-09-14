@@ -62,8 +62,8 @@ img {
 }
 
 .box{
-    padding: 1em 0.5em;
     margin: 1em 0;
+    padding: 1em 0.5em;
     background-color: #fff;
     background-image: url(../img/icon.png);
     background-repeat: no-repeat;
@@ -71,6 +71,7 @@ img {
     border-top: solid 5px #5d627b;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
+
 p {
     margin-bottom: 2em;
     padding: 0 0.5em;
@@ -129,7 +130,7 @@ h2 {
 }
 
 h3 {
-    margin: 0.5em 0;
+    margin: 0 0 0.5em;
     padding: 5px 0;
     font-size: 1.3em;
     border-bottom: 1px solid #cccccc;
@@ -292,6 +293,9 @@ nav ul {
 /*-------------------------
  * youtube
  *------------------------*/
+.president, .company {
+    margin-top: 1em;
+}
 .president iframe, .company iframe {
     width: 100%;
 }
