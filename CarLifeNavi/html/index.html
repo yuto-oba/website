@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="../src/img/favicon.ico">
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script src="../src/js/jquery.matchHeight.js"></script>
         <!-- bootstrap -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -62,13 +63,32 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <p class="theme">動物たちと共にお客様のご要望を叶えるカーショップを目指して</p>
-                        <hr>
                     </div>
+                </div>
+                <hr>
+                <div class="row">
                     <div class="col-xs-12">
-                        <p>カーライフナビは千葉県八街市で中古車・新車の販売、カスタム、車検、点検整備、任意保険等を行っているカーショップです。提携レッカー会社によるレッカーサービスも当社で受け付けております。お車に関することは当店にお任せください！<br />当店は全車支払総額表示！！明朗会計で安心してご購入頂けます。</p>
-                        <p>当店敷地内のお好きな所に駐車OKです！電車などでご来店の方はお電話下さい！最寄の駅までお迎えに行きます☆</p>
-                        <p>当店にはミニチュアホースやモルモット、リスザル、ウサギ、おさるさんなどたくさんの動物たちがいます！動物たちと触れ合いたい方も大歓迎です！！お待ちしております☆</p>
-                        <p>ペットを気軽に乗せられるレンタカー「ワンワン号」のレンタルも行っております。また、ワンワン号製作の相談も承っております。お気軽にご相談ください。</p>
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="box">
+                                <h3>全車支払い総額をご提示し、明朗会計をお約束します！</h3>
+                                <p>
+                                    カーライフナビは千葉県八街市で中古車・新車の販売、カスタム、車検、点検整備、任意保険等を行っているカーショップです。<br />
+                                    提携レッカー会社によるレッカーサービスも当社で受け付けておりますので、お車に関することは当店にお任せください！
+                                </p>
+                                <p>
+                                    ペットを気軽に乗せられるレンタカー「ワンワン号」のレンタルも行っております。また、ワンワン号製作の相談も承っております。お気軽にご相談ください。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="box">
+                                <h3>動物たちとお出迎え</h3>
+                                <p>
+                                    当店はミニチュアホースやモルモット、リスザル、ウサギ、おさるさんなど、たくさんの動物たちと暮らしています。動物たちと触れ合いたい方も大歓迎です。お待ちしております！
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,6 +106,10 @@
             parallax: true,
             speed: 600,
             autoplay: 10000,
+        });
+
+        $(function() {
+            $('.box').matchHeight();
         });
     </script>
 </html>
