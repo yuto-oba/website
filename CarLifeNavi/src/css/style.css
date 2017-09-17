@@ -15,11 +15,18 @@ html {
 }
 body {
     display: -webkit-flex;
+    display: -moz-flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
     min-height: 100vh;
     background-color: #fafafa;
+}
+@media screen and (min-width: 1217px) {
+    body {
+        width: 1200px;
+        border-right: solid 1px #111;
+    }
 }
 
 header { 
@@ -41,10 +48,9 @@ footer {
                                               #555 75%, #202487 75%, 
                                               #202487);
     background-size: 6px 6px;
-    margin-top: auto;
 }
 main {
-    /*flex: 1;*/
+    flex: 1;
     background: linear-gradient(#f2f3f3 0%, #fafafa 50%, #fafafa);
 }
 
