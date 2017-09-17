@@ -300,10 +300,10 @@ nav ul {
 /*-------------------------
  * youtube
  *------------------------*/
-.president, .company {
+.president, .president_recommend, .company, .company_recommend {
     margin-top: 1em;
 }
-.president iframe, .company iframe {
+.president iframe, .company iframe, .president_recommend iframe, .company_recommend iframe {
     width: 100%;
 }
 
