@@ -178,32 +178,22 @@ h3 span {
     margin: 0;
     width: 100%;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background: linear-gradient(to bottom, #999 0%, #666 3%, #555 49%, #333 51%, #111 100%);
 }
 nav ul {
     display: -webkit-box;
-    display: -moz-box;
     display: -webkit-flexbox;
-    display: -moz-flexbox;
     display: -webkit-flex;
-    display: -moz-flex;
     display: flex;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
     -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
 }
 .nav li {
     display: -webkit-box;
-    display: -moz-box;
     display: box;
     -webkit-box-align: center;
-    -moz-box-align: center;
     box-align: center;
 }
 
@@ -218,7 +208,7 @@ nav ul {
     box-shadow: inset 1px 0px 0 #666;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 800px) {
     nav li {
         border-right:1px solid #111;
         box-shadow: 1px 0px 0 #666;
@@ -230,15 +220,15 @@ nav ul {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 799px) {
     .nav {
         margin: 0;
         width: 100%;
         -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         background: linear-gradient(to bottom, #999 0%, #666 1%, #555 24%, #333 26%, #111 50%,
                                                #999 51%, #666 52%, #555 74%, #333 76%, #111 100%);
+        font-size: .9em;
     }
     .nav li a:hover {
         background: transparent !important;
@@ -255,7 +245,7 @@ nav ul {
     nav li:nth-child(1), li:nth-child(2), li:nth-child(3), li:nth-child(4) {
         border-bottom: 1px solid #111;
     }
-    nav li:not(:nth-child(4)) {
+    nav li:not(:nth-child(4)):not(:nth-child(8)) {
         border-right: 1px solid #111;
         box-shadow: 1px 0px 0 #666;
     }
