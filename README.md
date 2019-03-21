@@ -18,3 +18,5 @@
 ## インデントにタブをつかうやつとは相容れない
 ## メール送信CGI(SYNCK GRAPHICA)
  - https://www.synck.com/contents/download/cgi-perl/mailform_jcode.html
+## 2019/03追記
+ - YQL Apiは死んだんだ
