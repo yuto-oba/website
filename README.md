@@ -10,7 +10,9 @@
 - path等を直さないといけないもの
   - send.cgi(thanks.htmlのパス、設置者メールアドレス)
   - faq.html(mailformディレクトリのパス)
-  
+- テスト用URL
+  - http://carlifenavi.blush.jp/test/index.html
+   
 ***
 
 
