@@ -73,6 +73,9 @@ img {
     border-top: solid 5px #5d627b;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
+.box_noimg {
+    background-image: none;
+}
 .box_tw {
     margin: 1em 0;
     padding: 0;
